@@ -1,0 +1,71 @@
+{
+  "name": "event-saas",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs",
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon src/server.js",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "format": "prettier --write .",
+    "prepare": "husky"
+  },
+  "lint-staged": {
+    "*.{ts,js}": [
+      "eslint --fix",
+      "prettier --write"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DevMayur09/event-saas.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/DevMayur09/event-saas/issues"
+  },
+  "homepage": "https://github.com/DevMayur09/event-saas#readme",
+  "dependencies": {
+    "@prisma/client": "^7.4.0",
+    "bcrypt": "^6.0.0",
+    "bullmq": "^5.69.2",
+    "compression": "^1.8.1",
+    "cors": "^2.8.6",
+    "dotenv": "^17.3.1",
+    "express": "^5.2.1",
+    "helmet": "^8.1.0",
+    "joi": "^18.0.2",
+    "jsonwebtoken": "^9.0.3",
+    "morgan": "^1.10.1",
+    "pg": "^8.18.0",
+    "prisma": "^7.4.0",
+    "redis": "^5.10.0",
+    "uuid": "^13.0.0",
+    "winston": "^3.19.0"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^8.55.0",
+    "@typescript-eslint/parser": "^8.55.0",
+    "eslint": "^9.39.2",
+    "eslint-config-prettier": "^10.1.8",
+    "eslint-plugin-import": "^2.32.0",
+    "eslint-plugin-prettier": "^5.5.5",
+    "eslint-plugin-security": "^3.0.1",
+    "eslint-plugin-simple-import-sort": "^12.1.1",
+    "husky": "^9.1.7",
+    "jest": "^30.2.0",
+    "lint-staged": "^16.2.7",
+    "nodemon": "^3.1.11",
+    "prettier": "^3.8.1",
+    "supertest": "^7.2.2",
+    "ts-node": "^10.9.2"
+  }
+}
